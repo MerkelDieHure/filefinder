@@ -20,7 +20,7 @@ def rem_dir(foundFiles):
             splitFiles.append(element)
     return splitFiles
 
-directory = 'C:\\Users\\jan\\Downloads\\'
+directory = 'C:\\Users\\user\\Downloads\\'
 extension = '.pdf'
 foundFilesUpper = search_files(directory,extension.upper())
 foundFiles = search_files(directory, extension)
