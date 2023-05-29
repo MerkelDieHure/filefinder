@@ -21,7 +21,7 @@ def rem_dir(foundFiles):
     return splitFiles
 
 
-directory = 'C:\\Users\jan\Desktop\\testus\\'
+directory = 'C:\\Users\#\Desktop\\testus\\'
 extension = '.pdf'
 foundFiles = search_files(directory, extension)
 
