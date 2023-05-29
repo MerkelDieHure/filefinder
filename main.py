@@ -15,15 +15,17 @@ def rem_dir(foundFiles):
         if isinstance(element, str):
             newElement = element.split(directory,1)
             splitFiles.append(newElement)
-            print(newElement)
+            del newElement[0]
         else:
             splitFiles.append(element)
     return splitFiles
 
-
-directory = 'C:\\Users\#\Desktop\\testus\\'
+directory = 'C:\\Users\\user\\Desktop\\testus\\'
 extension = '.pdf'
 foundFiles = search_files(directory, extension)
 
-print(foundFiles)
-print(len(foundFiles))
+
+for file in foundFiles:
+    file = ''.join(file)
+    print(file)
+print(f'Es wurden {len(foundFiles)} {extension} gefunden')
