@@ -20,10 +20,14 @@ def rem_dir(foundFiles):
             splitFiles.append(element)
     return splitFiles
 
-directory = 'C:\\Users\\user\\Desktop\\testus\\'
+directory = 'C:\\Users\\jan\\Downloads\\'
 extension = '.pdf'
+foundFilesUpper = search_files(directory,extension.upper())
 foundFiles = search_files(directory, extension)
 
+if foundFilesUpper is not None:
+    for i in foundFilesUpper:
+        foundFiles.append(i)
 
 for file in foundFiles:
     file = ''.join(file)
